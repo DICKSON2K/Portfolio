@@ -14,7 +14,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
                     <li>
                         <a href="#work" class="nav__link">Work</a>
@@ -226,10 +226,9 @@
                         <input type="text" name="user_name" placeholder="Names" required class="contact__input">
                         <input type="email" name="user_email" placeholder="Email" required class="contact__input">
                     </div>
-                    <textarea name="user_message" id="" placeholder="Message" required class="contact__input contact__area">
-                    </textarea>
+                    <textarea name="user_message" placeholder="message" class="contact__input contact__area"></textarea>
                     <button class="button contact__button" type="submit">Send Message</button>
-                    <p class="contact__message" id="contact-message">Message</p>
+                    <p class="contact__message" id="contact-message"></p>
                 </form>
                 <div class="contact__social grid">
                     <a href="https://www.facebook.com/" target="_blank" class="contact__social-link">
@@ -248,8 +247,32 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li>
+                    <a href="#info" class="footer__link">Info</a>
+                </li>
+
+            </ul>
+            <span class="footer__copy">
+                &#169;All Rights Resrved By RiggzCode
+            </span>
+        </div>
+    </footer>
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
     <script src="script.js"></script>
                              <!--emailjs-->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                             <!--scrollup-->
+    <script src="scrollreveal.min.js"></script>
 </body>
 </html>
