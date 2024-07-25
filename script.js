@@ -97,10 +97,13 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-const sr = ScrollReveal({
+/*const sr = ScrollReveal({
     origin:'top',
     distance:'60px',
     duration:'2500',
-    delay:'400'
+    delay:'400',
+    //reset: true
 })
-sr.reveal(home__data)
+sr.reveal(`.home__data`)
+sr.reveal(`.home__img`,{delay:600})
+sr.reveal(`.home__img`,{delay:600})*/
