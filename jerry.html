@@ -5,40 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Showcase</title>
   <style>
+    :root {
+      --hue: 210; /* Example hue value, can be any number between 0 and 360 */
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       text-align: center;
       padding: 20px;
+      background-color: hsl(var(--hue), 40%, 20%);
+      color: #fff; /* Adjust text color for better contrast */
+    }
+    h1 {
+      color:#fff;
+      margin-bottom: 40px;
     }
     .job-container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color:hsl(var(--hue), 20%, 20%);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      color: #fff; /* Ensure text color is readable on white background */
     }
     .job {
       margin: 20px;
       text-align: center;
+      max-width: 800px;
+    }
+    .job h2 {
+  
+      color: #ddd;
     }
     .job img {
-      width: 300px;
+      width: 90%;
       height: auto;
       border-radius: 10px;
       margin-bottom: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .job p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .job-title {
+      color: hsl(var(--hue), 100%, 50%);
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .job-description {
+      font-size: 1.2em;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>My Job Showcase</h1>
+  <h1>Japanese Spitz Website</h1>
   <div class="job-container">
     <div class="job">
-      <h2>Software Developer</h2>
-      <p>Developing and maintaining web applications.</p>
+      <h2 class="job-title">My Role: Software Developer</h2>
+      <p class="job-description">As a software developer, I was responsible for the complete lifecycle of the web application. This included planning, designing, coding, testing, and maintaining the website. Below are some screenshots that highlight different aspects of the website.</p>
+      
       <img src="assets/Screenshot (41).png" alt="Homepage">
-      <p>Homepage of the website</p>
-      <img src="path/to/Screenshot (41).png" alt="About Page">
-      <p>About page with team information</p>
-      <img src="path/to/Screenshot (41).png" alt="Contact Page">
-      <p>Contact page for user inquiries</p>
+      <p>This is the homepage of the website, primarily designed for large screens. The site aims to give Japanese Spitz dogs a new home by providing detailed information and appealing visuals.</p>
+      
+      <img src="assets/Screenshot (43).png" alt="Mobile Layout">
+      <p>This screenshot showcases the mobile layout of the homepage. The responsive design ensures that users on smaller screens, such as smartphones and tablets, have an equally satisfying experience. The layout adapts to different screen sizes, maintaining functionality and aesthetics.</p>
+      
+      <img src="assets/Screenshot (46).png" alt="Adoption Page">
+      <p>The adoption page is a critical part of the website, providing users with detailed profiles of available dogs. It includes photos, descriptions, and adoption procedures. This page is designed to be user-friendly and informative, making it easy for potential adopters to find their perfect companion.</p>
+      
+      <img src="assets/Screenshot (47).png" alt="Contact Page">
+      <p>The contact page is designed to facilitate communication between the users and the organization. It includes a contact form, location information, and social media links. This ensures that users can easily reach out for inquiries, support, or to start the adoption process.</p>
     </div>
   </div>
 </body>
